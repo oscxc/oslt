@@ -1,0 +1,22 @@
+{
+  "name": "oslt",
+  "version": "1.0.0",
+  "description": "2d平移动画模块第一种设计（基于运行时长)",
+  "main": "oslt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscxc/oslt.git"
+  },
+  "keywords": [
+    "oslt"
+  ],
+  "author": "七八个星天怪",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oscxc/oslt/issues"
+  },
+  "homepage": "https://github.com/oscxc/oslt#readme"
+}

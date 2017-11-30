@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #d{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 100px;
+            background-color: brown;
+            border-radius:8px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+    <script src="oslt.js"></script>
+</head>
+<body>
+<div id="d"></div>
+<input id="run" type="button" value="运行">
+<input id="pause" type="button" value="暂停">
+<input id="reset" type="button" value="重置">
+<script>
+    var d = document.getElementById('d');
+    var run = document.getElementById('run');
+    var pause = document.getElementById('pause');
+    var reset = document.getElementById('reset');
+
+    var lt = new oslt(d,[100,100],[400,500],1000,function () {
+        console.log('end');
+    });
+
+
+    run.onclick = function () {
+        lt.run(function (value) {
+            //console.log(value);
+        });
+    };
+    pause.onclick = function () {
+        lt.pause();
+    };
+    reset.onclick = function () {
+        lt.reset();
+    };
+</script>
+</body>
+</html>
