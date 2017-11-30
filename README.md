@@ -53,7 +53,7 @@ lt.run();
 ```
 
 ## 查看演示
-[`demo`](https://oscxc.github.io/oslt)
+[`demo`](https://oscxc.github.io/oslt/)
 
 
 ## 联系我们
